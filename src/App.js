@@ -46,10 +46,10 @@ function App() {
         <Alert alert={alert} />
         <div className='container my-3'>
           <Routes>
-            <Route exact path="/about" element={<About />} />
+            <Route exact path="/about" element={<About mode={mode} />} />
       {/* /users --> component 1
       /users/Home --> componant 2     it shows if we donot use "exact" */}
-            <Route exact path="/" element={<TextForm showAlert={showAlert} heading='Enter text for analysis' mode={mode} />} /> */}
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading='Try TextUtils - Word counter, Character counter, Remove extra spaces' mode={mode} />} /> 
 
             
            </Routes> 
